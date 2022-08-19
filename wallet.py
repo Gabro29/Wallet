@@ -124,11 +124,11 @@ KV = '''
             anchor_x: "left"
             size_hint_y: None
             height: avatar.height
-            Image:
-                id: avatar
-                size_hint: None, None
-                size: "56dp", "56dp"
-                source: "wallet.png"
+            #Image:
+                #id: avatar
+                #size_hint: None, None
+                #size: "56dp", "56dp"
+                #source: "wallet.png"
         MDLabel:
             text: "G-Wall-Et"
             font_style: "Button"
@@ -143,13 +143,13 @@ KV = '''
         ScrollView:
             MDList:
                 OneLineListItem:
-                    text: "RDC"
+                    text: "Debit card"
                     font_style: "Button"
                     on_press:
                         root.nav_drawer.set_state("close")
                         root.screen_manager.current = "rdc_window"
                 OneLineListItem:
-                    text: "Banca Med"
+                    text: "Bank"
                     font_style: "Button"
                     on_press:
                         root.nav_drawer.set_state("close")
